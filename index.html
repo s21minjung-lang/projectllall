@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLALL 샐러드 정기배송</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="brand">
+        LLALL
+        <span class="brand-tagline">LETs LIVE A LONG LIFE</span>
+      </div>
+      <nav class="nav">
+        <a class="nav-link active" href="index.html">홈으로</a>
+        <a class="nav-link" href="health.html">건강 기록</a>
+        <a class="nav-link" href="report.html">칼로리 리포트</a>
+        <a class="nav-link" href="health-report.html">건강 리포트</a>
+        <a class="nav-link" href="order.html">맞춤 주문</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page active">
+        <div class="hero">
+          <div class="hero-text">
+            <p class="eyebrow">LLALL 소개</p>
+            <h1>건강한 루틴을 만드는 올인원 웰니스 브랜드</h1>
+            <p>
+              LLALL은 샐러드·도시락 정기배송부터 자동 기록, 건강 리포트까지 한
+              번에 연결해주는 웰니스 플랫폼이에요. 오늘의 식단과 컨디션을
+              자연스럽게 기록하고, 더 오래 건강하게 살아가는 라이프스타일을
+              함께 만들어갑니다.
+            </p>
+            <div class="hero-actions">
+              <button class="button primary toggle-button" data-toggle="delivery">
+                정기배송 메뉴 보기
+              </button>
+              <button class="button ghost toggle-button" data-toggle="auto-log">
+                자동 기록하기
+              </button>
+            </div>
+          </div>
+          <a class="salad-card" href="report.html" aria-label="샐러드 리포트 보기">
+            <svg viewBox="0 0 240 240" role="img" aria-labelledby="saladTitle">
+              <title id="saladTitle">신선한 샐러드 그림</title>
+              <defs>
+                <linearGradient id="bowl" x1="0" x2="1">
+                  <stop offset="0" stop-color="#cbe2ff" />
+                  <stop offset="1" stop-color="#2f6bff" />
+                </linearGradient>
+              </defs>
+              <circle cx="120" cy="110" r="90" fill="#e8f0ff" />
+              <path
+                d="M40 120c10 60 60 90 120 90s110-30 120-90"
+                fill="url(#bowl)"
+              />
+              <path
+                d="M60 90c20-30 60-40 90-25"
+                fill="none"
+                stroke="#7ed957"
+                stroke-width="16"
+                stroke-linecap="round"
+              />
+              <path
+                d="M120 80c25-20 60-20 80 5"
+                fill="none"
+                stroke="#5cb85c"
+                stroke-width="16"
+                stroke-linecap="round"
+              />
+              <circle cx="85" cy="120" r="14" fill="#ffb347" />
+              <circle cx="150" cy="120" r="12" fill="#ff6363" />
+              <circle cx="120" cy="140" r="10" fill="#ffd93d" />
+            </svg>
+            <div class="salad-info">
+              <h3>클릭하여 리포트 확인</h3>
+              <p>오늘 먹은 샐러드 칼로리와 피드백을 바로 확인하세요.</p>
+            </div>
+          </a>
+        </div>
+        <div class="feature-grid">
+          <div class="feature link-card">
+            <h3>정기배송</h3>
+            <p>주간/월간 플랜으로 원하는 요일에 맞춰 자동 배송.</p>
+          </div>
+          <div class="feature link-card">
+            <h3>자동 기록</h3>
+            <p>섭취한 샐러드를 자동으로 로그하여 루틴을 관리.</p>
+          </div>
+          <div class="feature">
+            <h3>맞춤 피드백</h3>
+            <p>칼로리와 영양 밸런스를 분석해 개인화된 조언 제공.</p>
+          </div>
+        </div>
+
+        <div class="sub-section" id="delivery" aria-live="polite">
+          <div class="section-header">
+            <h2>정기배송 샐러드 &amp; 도시락 리스트</h2>
+            <p>선택한 메뉴는 주간 배송 플랜에 자동으로 담겨요.</p>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card link-card">
+              <h3>클래식 그린 샐러드</h3>
+              <p>로메인 + 방울토마토 + 발사믹</p>
+              <span>280 kcal</span>
+            </article>
+            <article class="menu-card link-card">
+              <h3>치킨 프로틴 도시락</h3>
+              <p>닭가슴살 + 현미 + 구운 야채</p>
+              <span>520 kcal</span>
+            </article>
+            <article class="menu-card link-card">
+              <h3>비건 컬러 샐러드</h3>
+              <p>퀴노아 + 아보카도 + 렌틸</p>
+              <span>340 kcal</span>
+            </article>
+            <article class="menu-card link-card">
+              <h3>연어 오메가 도시락</h3>
+              <p>연어 + 브로콜리 + 고구마</p>
+              <span>480 kcal</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="sub-section" id="auto-log" aria-live="polite">
+          <div class="section-header">
+            <h2>오늘 먹은 샐러드 체크</h2>
+            <p>오늘 섭취한 메뉴를 선택하면 자동 기록이 저장됩니다.</p>
+          </div>
+          <div class="log-grid">
+            <label class="log-card link-card">
+              <input type="checkbox" />
+              <div>
+                <h3>클래식 그린 샐러드</h3>
+                <p>신선한 채소와 가벼운 드레싱</p>
+              </div>
+            </label>
+            <label class="log-card link-card">
+              <input type="checkbox" />
+              <div>
+                <h3>치킨 프로틴 샐러드</h3>
+                <p>단백질 충전 메뉴</p>
+              </div>
+            </label>
+            <label class="log-card link-card">
+              <input type="checkbox" />
+              <div>
+                <h3>비건 컬러 샐러드</h3>
+                <p>식물성 단백질과 슈퍼푸드</p>
+              </div>
+            </label>
+          </div>
+          <div class="page-actions">
+            <a class="button primary" href="report.html">오늘 기록 리포트</a>
+            <a class="button ghost" href="health.html">건강 기록으로</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>LLALL과 함께 건강한 식단 루틴을 시작하세요.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
