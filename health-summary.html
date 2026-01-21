@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLALL 건강 비교 리포트</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="brand">
+        LLALL
+        <span class="brand-tagline">LETs LIVE A LONG LIFE</span>
+      </div>
+      <nav class="nav">
+        <a class="nav-link" href="index.html">홈으로</a>
+        <a class="nav-link" href="health.html">건강 기록</a>
+        <a class="nav-link" href="report.html">칼로리 리포트</a>
+        <a class="nav-link" href="health-report.html">건강 리포트</a>
+        <a class="nav-link" href="order.html">맞춤 주문</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page active">
+        <div class="page-header">
+          <h2>건강 비교 리포트</h2>
+          <p>오늘 입력한 기록을 어제와 지난주 데이터와 비교했습니다.</p>
+        </div>
+        <div class="report-grid">
+          <div class="report-card">
+            <h3>체중 변화</h3>
+            <p class="metric" id="summary-weight">-- kg</p>
+            <p id="summary-weight-compare">어제 대비 변화 계산 중</p>
+          </div>
+          <div class="report-card">
+            <h3>컨디션 변화</h3>
+            <p class="metric" id="summary-condition">--</p>
+            <p id="summary-condition-compare">지난주 평균과 비교 중</p>
+          </div>
+          <div class="report-card">
+            <h3>복약 변화</h3>
+            <p class="metric" id="summary-medication">--</p>
+            <p id="summary-medication-compare">지난주 복약률과 비교 중</p>
+          </div>
+        </div>
+        <div class="page-actions">
+          <a class="button primary" href="health-report.html">상세 건강 리포트</a>
+          <a class="button ghost" href="health.html">기록 다시하기</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>LLALL과 함께 건강한 식단 루틴을 시작하세요.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
